@@ -1,0 +1,29 @@
+html, body { margin:0; height:100%; overflow:hidden; }
+#game { width:100vw; height:100vh; display:block; }
+
+#letter.hidden { display:none; }
+
+#letter {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.5);
+  display:flex; align-items:center; justify-content:center;
+  padding: 24px;
+}
+
+.paper{
+  width:min(600px, 360px);
+  background: #f7f1e3;
+  border: 2px solid #1b1b1b;
+  border-radius: 14px;
+  padding: 22px 22px 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+  position: relative;
+}
+
+#close{
+  position:absolute; top:10px; right:10px;
+  border:0; background:transparent; font-size:18px; cursor:pointer;
+}
+
+.paper h2{ margin: 6px 0 10px; }
+.paper p{ margin:0; line-height:1.5; white-space:pre-line; }
